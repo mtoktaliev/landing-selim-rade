@@ -1,5 +1,5 @@
-import './style.css';
-import order from "./img/order-icon.svg";
+import './Header.css';
+import order from "./../../assets/icons/order-icon.svg";
 
 const Header = () => {
     return ( 

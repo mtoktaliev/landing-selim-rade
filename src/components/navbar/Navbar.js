@@ -1,7 +1,7 @@
-import "./style.css";
-import logo from "./img/logo-selim-trade.png"
-import toggleLogo from "./img/logo-selim-trade-toggle.png"
-import phone from "./img/phone-icon.svg"
+import "./Navbar.css";
+import logo from "./../../assets/icons/logo-selim-trade.png"
+import toggleLogo from "./../../assets/icons/logo-selim-trade-toggle.png"
+import phone from "./../../assets/icons/phone-icon.svg"
 import { useState } from "react";
 
 const Navbar = () => {
