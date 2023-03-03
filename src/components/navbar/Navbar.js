@@ -2,15 +2,27 @@ import "./Navbar.css";
 import logo from "./../../assets/icons/logo-selim-trade.png"
 import toggleLogo from "./../../assets/icons/logo-selim-trade-toggle.png"
 import phone from "./../../assets/icons/phone-icon.svg"
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
 
     const [isOpen, setIsOpen] = useState(false);
+    const [scroll, setScroll] = useState(false);
+
+    useEffect(() => {
+        window.addEventListener("scroll", () => {
+     setScroll(window.scrollY > 100);
+    });
+    }, []);
+
+    function bd() {
+        document.body.classList.toggle('body_hidden')
+    }
+    
 
     return ( 
         <nav className="nav">
-            <div className="nav_container">
+            <div className={scroll ? 'nav_container nav_container-bg' : 'nav_container'}>
                 
                 <a href="/" className="nav_logo"><img src={logo} alt="logo"></img></a>
 
@@ -37,7 +49,7 @@ const Navbar = () => {
 
                 <a href="/" className="nav_contacts">г. Бишкек<br/>+996 (552) 57 07 55</a>
 
-                <div className={`nav_toggle ${isOpen && "open"}`} onClick={() => setIsOpen(!isOpen)}>
+                <div className={`nav_toggle ${isOpen && "open"}`} onClick={() => {setIsOpen(!isOpen); bd()}}>
                     <div className="bar"></div>
                 </div>
 
