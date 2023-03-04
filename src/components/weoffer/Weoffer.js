@@ -1,3 +1,4 @@
+import LightBtn from '../lightBtn/LightBtn';
 import './Weoffer.css'
 
 
@@ -23,7 +24,7 @@ const Weoffer = () => {
                         <div className="weoffer_item-name">Складные</div>
                         </div>
                     </div>
-                <button className="light_btn">смотреть все</button>
+                    <LightBtn name="смотреть все"/>
             </div>
         </div>
     );
