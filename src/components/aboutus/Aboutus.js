@@ -1,11 +1,12 @@
+import H2 from '../h2/H2';
 import './Aboutus.css';
 
 
 const Aboutus = () => {
     return ( 
         <div className="aboutus">
-            <div className="container">
-                <h2 className="h2 aboutus_title">Кто такие Selim trade?</h2>
+            <div className="aboutus_container">
+                <H2 data="Кто такие Selim trade?" />
                 <div className="aboutus_text">
                     <p>МЫ являемся официальным представителем DOORHAN.</p>
                     <p>Производственно — монтажная компания Selim trade основана в 2003 году.</p>

@@ -1,4 +1,5 @@
 import Slider from "react-slick";
+import H2 from "../h2/H2";
 import LightBtn from '../lightBtn/LightBtn';
 import './Weoffer.css'
 
@@ -15,8 +16,8 @@ const Weoffer = () => {
 
     return (
         <div className="weoffer">
-            <div className="container">
-                <h2 className="h2 weoffer_title">Мы предлагаем</h2>
+            <div className="weoffer_container">
+                <H2 data="Мы предлагаем"/>
                     <div className="weoffer_inner">
                         <div className="weoffer_item-one">
                             <div className="weoffer_item-name">Секционные</div>

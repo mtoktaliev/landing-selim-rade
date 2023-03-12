@@ -6,7 +6,7 @@ const Header = () => {
     const img = <img src={order} alt="order-icon"></img>;
     return ( 
         <div className="header">
-            <div className='container'>
+            <div className='header_container'>
                 <h1 className='header_title'>Современная и надёжная защита</h1>
                 <div className='header_subtitle'>Найдите идеальный вариант сами или предоставьте это нам</div>
                 <Btn icon={img} name="Заказать ворота"/>

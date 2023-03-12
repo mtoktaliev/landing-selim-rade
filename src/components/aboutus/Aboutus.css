@@ -1,16 +1,21 @@
 .aboutus {
     background: url(./../../assets/img/who-is-selim-trade-bg.jpg) 100% 100% no-repeat;
     background-size: cover;
-    background-position: center bottom;
-    min-height: 800px;
-	margin-top: -50px;
+    background-position: center;
+    min-height: 80vh;
+	top: -60px;
     position: relative;
     z-index: -2;
+    display: flex;
+    align-items: center;
 }
 
-.aboutus_title {
-    padding-top: 238px;
-    margin-bottom: 20px;
+.aboutus_container {
+    max-width: 1270px;
+	padding: 0 15px;
+	margin: 0 auto;
+	height: 100%;
+    flex-grow: 1;
 }
 
 .aboutus_text {
@@ -36,7 +41,7 @@
 @media (max-width: 992px) {
 
     .aboutus {
-        min-height: 700px;
+        min-height: 70vh;
     }
 
     .aboutus_title {
@@ -48,7 +53,7 @@
 @media (max-width: 768px) {
 
     .aboutus {
-        min-height: 650px;
+        min-height: 60vh;
     }
     
     .aboutus_title {
@@ -70,7 +75,7 @@
 @media (max-width: 576px) {
 
     .aboutus {
-        min-height: 500px;
+        min-height: 50vh;
     }
     
     .aboutus_title {
